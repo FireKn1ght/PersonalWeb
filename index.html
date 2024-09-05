@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
+    <nav>
+        <div class="fixed-menu">
+            <h1 class="logo">DK</h1>
+            <div class="nav-links">
+                <a class="nav-link main-link active" href="#main">Главная</a>
+                <a class="nav-link about-link" href="#about">Обо мне</a>
+                <a class="nav-link skills-link" href="#skills">Навыки</a>
+                <a class="nav-link works-line" href="#works">Работы</a>
+                <a class="nav-link comments-link" href="#comments">Отзывы</a>
+            </div>
+        </div>
+    </nav>
     <section id="main">
     <div class="main-block">
         <div class="moving-planet"></div>
@@ -16,7 +30,7 @@
                 Добро пожаловать!
             </h1>
             <p class="main-subtitle">
-                •••
+                личный сайт веб разработчика
             </p>
         </div>
         <div class="button">
@@ -26,6 +40,7 @@
         </div>
     </div>
 </section>
+</nav>
 <section id="about">
     <h1 class="title">ОБО МНЕ</h1>
     <div class="about-block">
@@ -69,11 +84,16 @@
 <section id="works">
     <h1 class="title">РАБОТЫ</h1>
     <div class="works-block">
-       <img src="work1 2.png" >
-       <img src="work2 2.png">
-       <img src="work3 2.png">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="work1.png" alt="Работа 1"></div>
+                <div class="swiper-slide"><img src="work2.png" alt="Работа 2"></div>
+                <div class="swiper-slide"><img src="work3.png" alt="Работа 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
- </section>
+</section>
  <section id="comments">
     <h1 class="title">ОТЗЫВЫ</h1>
     <div class="comments-block">
@@ -111,5 +131,18 @@
         <a href="#"> <img src="img/discord.svg"> </a>
     </div>
  </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+<script src="script.js"></script>
 </body>
 </html>
