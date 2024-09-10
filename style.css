@@ -394,7 +394,38 @@ nav {
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+
+.fixed-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.fixed-menu.default {
     background-color: #6debe7;
+}
+
+.fixed-menu.main {
+    background-color: #6debe7;
+}
+
+.fixed-menu.about {
+    background-color: #1E93FF;
+}
+
+.fixed-menu.skills {
+    background-color: #792AFF;
+}
+
+.fixed-menu.works {
+    background-color: #200153;
+}
+
+.fixed-menu.comments {
+    background-color: #792AFF;
 }
 
 .nav-links {
