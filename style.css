@@ -458,4 +458,110 @@ nav {
 .active{
     background-color: #BBFF2C;
  }
- 
+
+ @media (max-width: 1000px) {
+    .nav-links {
+        display: none;
+    }
+
+.logo {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.main-content {
+    max-width:  320px;
+}
+
+.main-title {
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.main-subtitle {
+    font-size: 15px;
+}
+.planet, .moving-cloud, .moving-planet2 {
+    display: none;
+}
+.title {
+    font-size: 50px;
+    padding-top: 30px;
+}
+.about-block {
+    flex-direction: column;
+    margin-top: 20px;
+    padding-block-end: 0;
+}
+
+.about-card {
+        order: -1;
+    background-size: contain;
+    padding-top: 20px;
+    width: 326px;
+    height: 296px;
+}
+
+.about-card img {
+    width: 85%;
+}
+
+.about-content {
+    width: 75%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-size: 18px;
+}
+
+.skills-card {
+    margin: 20px;
+    padding-left: 10px;
+    background-size: contain
+}
+
+.skills-card p {
+    font-size: 16px;
+    margin-top: 15%;
+    margin-bottom: 20px;
+}
+
+.skills-section {
+    min-height: 70px;
+}
+
+.skills-card .button {
+
+    bottom: 100px;
+}
+
+.works-block {
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.works-block img {
+    margin: 20px 0;
+    width: 80%;
+}
+
+.comments-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.comment {
+    background-image: url();
+}
+
+.comment p {
+    font-size: 15px;
+    max-width: 290px;
+}
+}
