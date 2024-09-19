@@ -458,12 +458,49 @@ nav {
 .active{
     background-color: #BBFF2C;
  }
+ .mobile-button{
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+ }
+ .hide{
+    display: none;
+ }
 
- @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .nav-links {
         display: none;
     }
 
+    .mobile-button {
+        display: block;
+    }
+
+    .mobile-menu{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: #200153;
+        min-height: 100vh;
+     }
+
+     .mobile-nav{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .mobile-nav-links .nav-link{
+        margin-bottom: 30px;
+        width: 210px;
+        height: 50px;
+     }
+     
 .logo {
     font-size: 40px;
     padding-left: 20px;
@@ -492,7 +529,7 @@ nav {
 .about-block {
     flex-direction: column;
     margin-top: 20px;
-    padding-block-end: 0;
+    padding: 0;
 }
 
 .about-card {
@@ -520,7 +557,7 @@ nav {
 .skills-card {
     margin: 20px;
     padding-left: 10px;
-    background-size: contain
+    background-size: contain;
 }
 
 .skills-card p {
@@ -534,7 +571,6 @@ nav {
 }
 
 .skills-card .button {
-
     bottom: 100px;
 }
 
