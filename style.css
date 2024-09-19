@@ -18,7 +18,7 @@
 
 #main {
     background-image: url(img/bgMAIN.png);
-    background: #6debe7;
+    background: #85fffb;
 
 }
 
@@ -465,6 +465,7 @@ nav {
     position: absolute;
     right: 20px;
  }
+
  .hide{
     display: none;
  }

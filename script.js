@@ -4,20 +4,17 @@ nav.addEventListener('click', function(event){
   let activeBtn = document.querySelector('.active');
   let mobileMenu = document.querySelector('.mobile-menu');
 
-  // Если клик был по ссылке в меню, активируем её
   if (clickTarget.classList.contains('nav-link')) {
       clickTarget.classList.add('active');
       if (activeBtn && activeBtn !== clickTarget) {
           activeBtn.classList.remove('active');
       }
 
-      // Если мобильное меню открыто, скрываем его
       if (!mobileMenu.classList.contains('hide')) {
           mobileMenu.classList.add('hide');
       }
   }
 
-  // Проверяем, нужно ли добавлять или удалять класс "off-scroll"
   let body = document.querySelector('body');
   if (!body.classList.contains('off-scroll') && mobileMenu.classList.contains('hide')) {
       body.classList.add('off-scroll');
@@ -55,7 +52,6 @@ document.querySelector('.mobile-button').addEventListener('click', function(even
   let mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.classList.toggle('hide');
 
-  // Если мобильное меню видно, добавляем класс "off-scroll", иначе удаляем
   let body = document.querySelector('body');
   if (!mobileMenu.classList.contains('hide')) {
     body.classList.add('off-scroll');
